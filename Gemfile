@@ -14,15 +14,20 @@ ruby '2.4.1'
 ## your dependencies, then nothing extra needs to be done
 group :development do
   gem 'ffi-icu'
-  gem 'jekyll', '~>3.0'
-  gem 'json', '>= 1.9'
-  gem 'less', '2.4.0'
-  gem 'kramdown'
-  gem 'RedCloth'
-  gem 'therubyracer' # required by less
+  gem 'jekyll', '3.3.0'
   gem 'jshintrb', '~>0.3.0'
-  gem 'safe_yaml'
+  gem 'json', '>= 1.9'
   gem 'json-schema'
+  gem 'kramdown'
+  gem 'less', '2.4.0'
+  gem 'liquid-c'
+  gem 'RedCloth'
+  gem 'safe_yaml'
+  gem 'therubyracer' # required by less
+end
+
+group :jekyll_plugins do
+  gem 'jekyll-include-cache'
 end
 
 ## Not used on build server. Only used by developers and Travis CI, so
