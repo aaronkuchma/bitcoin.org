@@ -42,15 +42,15 @@ show_toc: true
 {% for term in item %}
 {% capture text_and_link %}<a href="{{term[1]}}">{{term[0]}}</a>{% endcapture %}
 {% capture first_character %}{{term[0] | downcase | truncate: 1, '' }}{% endcapture %}
-{% if first_character != '0' ||
-first_character != '1' ||
-first_character != '2' ||
-first_character != '3' ||
-first_character != '4' ||
-first_character != '5' ||
-first_character != '6' ||
-first_character != '7' ||
-first_character != '8' ||
+{% if first_character != '0' or
+first_character != '1' or
+first_character != '2' or
+first_character != '3' or
+first_character != '4' or
+first_character != '5' or
+first_character != '6' or
+first_character != '7' or
+first_character != '8' or
 first_character != '9' %}
 {% assign finished_with_numbers = true %}
 {% endif %}
